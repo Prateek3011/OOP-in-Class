@@ -1,0 +1,105 @@
+oop ws2-1 note
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Customers ' main report is a program that reads records of behavioral profiles of using Android applications of a number of Customers from a file and holds these records in a dynamically allocated array of Customers. (Each record holds the app's identifier (Package_name), The user's identifier (user_id), spent time in hours (timeinhours) , day of the year (dayofyear), spent foreground Wi-Fi network connection time(ms)(Fwifitime), and day of week (dayofweek), spent foreground cellular network connection time(ms) (Fctime), in a .csv file format.) After loading all the information into a dynamic array of Customers, the program will groups the records based on the user_id in ascending order
+
+>> 여러 고객의 Android 애플리케이션 사용 행동 프로필 기록을 읽고 동적으로 할당된 고객 배열에 이러한 기록을 보관하는 프로그램입니다.
+
+
+  struct Customers {
+        char* Package_Name;
+        int user_id;
+        double timeinhours;
+        int dayofyear;
+        int Fwifitime;
+        int Fctime;
+        char dayofweek;
+    };
+
+
+
+----------------------------
+
+Tool : implement 4 overloads of a funtion called read
+
+1. read function for the package name:
+package name 읽는거 
+
+when success, returns a Cstring argument to send back the name of the package.
+읽으면/ return Cstring argument - return Cstring ?
+
+ex)fscanf(fp, "%60[^\n]\n", ......
+char
+
+2. read function for the user_id, dayofyear, fwifitime, fctime:
+when success, returns a reference argument to an integer to pass back the user_id, dayofyear, Fwifitime and fctime.
+ex) fscanf(fp, "%d,".......
+
+fscanf == 학생번호 읽어오기.
+학생번호 읽어오면, user_id, dayofyear,Fwifitime, Fctime 값은 포인터로 보내고, 
+
+
+
+
+
+
+3. read function for the timeinhours:
+When success, returns a reference argument to a doubler number to pass back the timeinhours.
+ex) fscanf(fp, "%lf,",......
+
+4. read function for the dayofweek:
+when success, When success, returns a reference argument to a char to pass back the dayofweek.
+ex) fscanf(fp, "%[^ \t\n\r\v\f,]%*c",......
+
+
+
+------------------------------------------
+
+package
+
+>> no_of_traces should hold the number of records read from the file and thus it should be used later to allocate the dynamic array of Customers.
+
+>> This Customers pointer should point to the dynamic array of users.
+
+
+
+Complete the implementation of the following two functions:
+수정
+>> loadTraces 
+This overload of the loadTraces function returns a bool and receives a Customers reference.
+In a local array of 50 characters, it will try to read the Package name from the file. If successful it will find the actual length of the Package name using the strlen function and then add one to the length (for null termination) and allocate the same amount of characters in the name of the Customers reference. Then it will copy the read name (from the local character array) into the newly allocated name of the Customers reference using strcpy.
+If all the reads were successful, it will return true, otherwise false.
+
+>>loadTraces 
+This overload of the loadTraces function loads all the users records into the Customers array and returns a bool for success and has no arguments.
+First open the data file.
+Then set the number of users to the number of records in the file and then allocate a dynamic array of users pointed by the global Customers pointer; "users" to the number of the records in the file.
+Then load the users one by one from the file into the dynamic array of users.
+If the number of read records does not match the number of records, display the following error message and return false. (Error reading the records, Check the data file.)
+otherwise return true.
+
+
+
+추가
+>> display 
+This function does not receive or return anything.
+This function displays customer records one by one (each record in a new row) based on the following condition: (timeinhours > 1.0 and dayofweek == 'F').
+See the sample output.
+
+>>deallocateMemory 
+This function does not return or receive anything.
+In a loop go through all the elements of the users array and deallocate the dynamic Package_Name of each user. Then deallocate the whole users array.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+dynamic memory
+
+
+int n;
+
+Student* student = nullptr; //allocate
+student = new Student[n]; //allocate
+
+delete [] student; //deallocate
+student = nullptr; //재사용할때
+

@@ -1,0 +1,142 @@
+/***********************************************************************
+// Workshop 1 p2: tester program
+//
+// File  UI.cpp
+// Version 1.0
+// Date  winter 2023
+// Author Fardad Soleimanloo
+//
+//
+// Revision History
+// -----------------------------------------------------------
+// Name            Date            Reason
+/////////////////////////////////////////////////////////////////
+***********************************************************************/
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <cstring>
+#include "GPAlist.h"
+#include "GPA.h"
+#include "file.h"
+#include "UI.h"
+
+
+using namespace std;
+using namespace sdds;
+using namespace fsdds;
+using namespace uisdds;
+
+
+namespace glsdds {
+   
+    FILE* fptr;
+    GPA gpas[100];
+
+        
+    // loads all the moves into the global array of structures.
+    bool gpaQuery(const char* filename) {
+       
+        
+        sdds::GPA ggpa;
+
+        int gpanum = 0; // number of movies read
+        bool ok = true;
+        if (openFile(filename)) {
+            while (ok && gpanum < 100) {
+                ok = readName(ggpa.name) &&
+                    readStudentNum(&ggpa.stno) &&
+                    readGPA(&ggpa.gpa);
+                if (ok) gpas[gpanum++] = ggpa;
+            }
+            closeFile();
+        }
+        return gpanum == 100;
+    }
+
+    // returns true is the genre arg is substring of any of the
+ // genres of the target of the mvp (Movie*) arg.
+    // <>~! && GPA
+    bool findGPA(const struct GPA* g_gpa, const double inputGPA) {
+        int i = 0;
+        bool found = false;
+
+        while (!found && g_gpa->gpa[i][0]) {
+            if (g_gpa->gpa[i++] == inputGPA) {
+                found = true;
+            }
+        }
+        return found;
+    }
+
+    bool findGPA(const struct GPA* g_gpa, const char inputChar[], const double inputGPA) {
+        int i = 0;
+        bool found = false;
+
+        if (inputChar[0] != '<' && inputChar[0] != '>' && inputChar[0] != '~' && inputChar[0] != '!')
+        {
+            cout << "Syntax error: " << endl;
+            found = true;
+        }
+        else
+        {
+            if (inputChar[0] == '!')
+            {
+                cout << "Exit the program? (Y)es/(N)o: ";
+                found = !yes();
+                cout << endl;
+            }
+            else
+            {
+                displayGPAwithinformation(struct GPA g_gpa, inputChar[], inputGPA);
+                found = true;
+            }
+        }
+        return found;
+
+    }
+
+    // displays the movie info
+    void displayGPA(const struct GPA* g_gpa) {
+        int i = 1;
+        
+        cout << "[" << i << "] " << g_gpa->stno[i] << ": " << g_gpa->gpa[i] << " (" << g_gpa->name[i] << ")";
+
+        while (g_gpa->gpa[i][0]) {
+            cout << ", " << g_gpa->gpa[i++];
+        }
+        cout << ")" << endl;
+   
+    }
+    
+    void displayGPAwithinformation(struct GPA* g_gpa, const char inputChar[], const double inputGPA) {
+        int i, j;
+        findGPA(&g_gpa, inputChar[]);
+        for (i = 0, j = 1; i < 100; i++) {
+            if (findGPA(&g_gpa, inputGPA)) {
+                cout << "[" << j++ << "] ";
+                displayGPA(&gpas[i]);
+            }
+        }
+        if (j == 1) {
+            cout << "Syntax error: " << inputGPA << endl;
+        }
+    }
+
+}
+
+--------------------
+
+
+        if (inputChar[0] == '~')
+        {
+
+        }
+        else if (inputChar[0] == '<')
+        {
+
+        }
+        else
+        {
+
+        }
+

@@ -1,0 +1,6 @@
+//Sae-mi Park || spark280@myseneca.ca || 121333223 || Jan 27, 2023
+
+
+<<<<<<<REFLECT>>>>>>>
+
+For figuring out this DIY project, I had to learn about 'resizing of memory' from professor. Before learning 'resizing of memory', we could get next information by declaring lots of variables. 'Resizing memory', in simple terms, refers to the process of transferring water from a small cup to a larger cup to receive more water. For this process, it is necessary to first prepare an empty small cup and a large cup, put the contents in the small cup, then transfer the contents to the large cup, empty the small cup, and pour the new contents into the small cup. On the other hand, by doing 'resizing memory', we can continue to receive new memory regardless of size. Also, through 'dynamically allocate memory' and 'deallocate', memory can be continuously received and deleted without declaring a separate variable. Through these processes, I was able to learn how to reduce memory leaking and write code that runs programs without wasting memory. 

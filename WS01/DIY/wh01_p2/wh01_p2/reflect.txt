@@ -1,0 +1,7 @@
+//Sae-mi Park || spark280@myseneca.ca || 121333223 || Jan 22, 2023
+
+
+<<<<<<<REFLECT>>>>>>>
+
+
+By doing D.I.Y workshop, I could’ve learned about input, output, how to read data file, how to display data file which is .csv file. Furthermore, I could learn how to change string to double by searching on the internet which is google. I had to search ‘how to change string to double type’ because there was no space between special characters and GPA in output. Therefore, I need to divide string to one charter which is for distinguish range and double type value which is for searching GPA from the data file. So, I found “stod” function from “C++ Program For String to Double Conversion - GeeksforGeeks” here. It was very helpful for changing string to double. Also, I have learned about 'how to show double with zero, for instance 4.0' from https://jokerkwu.tistory.com/127. Consequently, DIY workshop was little bit challenge to me because I have never learned C++ before, even though I have learning C which is IPC from 1st semester and OOP class in 2nd semester, I feel C and C++ are similar but different. So I needed to learn how to use cout and cin for print and scan for input. Although, I got functions from what professor made for us, to changing and fixing for DIY project was not that too easy. On the other hand, I could have learned basic C++ by doing DIY assignment. 
