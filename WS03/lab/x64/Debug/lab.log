@@ -1,0 +1,2 @@
+﻿  Department.cpp
+C:\Users\Owner\OneDrive - Seneca\Desktop\Seneca\2nd\oop\workshop\OOP-Workshops\WS03\lab\Department.cpp(79): error C4703: potentially uninitialized local pointer variable 'temp' used
