@@ -1,0 +1,7 @@
+//Sae-mi Park || spark280@myseneca.ca || 121333223 || Feb 05, 2023
+
+
+<<<<<<<REFLECT>>>>>>>
+
+For completing workshop 3, especially DIY part, I had to make sure about class, struct, array and pointer. Furthermore, I need to read repeatedly the 'software development' site again and again. It was kind of easy to understand during the lecture class, but doing workshop was little bit of challenging to me. I thought that I needed efforts for doing in the part of integrating new concepts with existing concepts.
+For example, I already learn about struct and array when I did IPC144 during the last semester. By the way, 'class' is new concept from oop 244 in this semester. Struct and class are kind of similar but different concept in C language and C++ language. In other word, I need to make sure what I use and how to use it for this workshop. Also, I've done and practiced 'allocate' and 'deallocate' for dynamic memory. So I need to get kind of that concept but should use different way to empty state. As a result, those similar concept but different concepts confused me.
