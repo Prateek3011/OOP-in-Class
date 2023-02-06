@@ -8,7 +8,7 @@ namespace sdds {
 
     struct Customers {
         char user_name[21];
-        int retweets_count;;
+        int retweets_count;
         int likes_count;
         int replies_count;
         char share_videos;
