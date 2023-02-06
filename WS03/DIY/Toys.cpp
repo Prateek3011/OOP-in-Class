@@ -63,9 +63,9 @@ namespace sdds {
 		
 		if (m_onSale == true)
 		{
-			cout.setf(ios::left);
-			cout.width(8);
-			cout <<"   On Sale ";
+			cout.width(10);
+			cout <<"On Sale";
+			cout << " ";
 		}
 		else{
 			cout.width(8);
