@@ -1,0 +1,14 @@
+Tournament& Tournament::match(const SoccerTeam* ls){
+            for (int i = 0; i <1; i++) {
+                if (m_soccer[i].fouls() < m_soccer[i + 1].fouls()) {
+                    m_soccer[i + 1].m_noFoul *= 2;
+                    m_soccer[i + 1].calFines();
+                    m_soccer[i].m_goals++;
+                    if (m_soccer[i + 1].m_noFoul > MAX_FOUL) {
+                        m_soccer[i + 1].m_noFoul = -1;
+
+                        }
+                    }
+               }
+  return *this;
+}
