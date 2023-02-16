@@ -44,10 +44,10 @@ namespace sdds {
 
     ostream& EggCarton::displayCarton(int size, int noOfEggs, bool jumbo, ostream& ostr) const {
         int cartonWidth = size == 6 ? 3 : 6;
-        for (int i = 0; i < size; i++) {
-            ostr << ((i % cartonWidth) ? '|' : '[') << ((i < noOfEggs) ? (jumbo ? 'O' : 'o') : ' ');
-            ((i + 1) % cartonWidth == 0) && ostr << ']' << endl;
-        }
+            for (int i = 0; i < size; i++) {
+                ostr << ((i % cartonWidth) ? '|' : '[') << ((i < noOfEggs) ? (jumbo ? 'O' : 'o') : ' ');
+                ((i + 1) % cartonWidth == 0) && ostr << ']' << endl;
+            }
         return ostr;
     }
 
@@ -110,7 +110,7 @@ namespace sdds {
     EggCarton EggCarton::operator++(int) //postfix
     {
         EggCarton temp = *this;
-        ++(*this);
+            ++(*this);
         return temp;
     }
 
@@ -127,7 +127,7 @@ namespace sdds {
     EggCarton EggCarton::operator--(int) //postfix
     {
         EggCarton temp = *this;
-        --(*this);
+            --(*this);
         return temp;
     }
 
@@ -137,10 +137,10 @@ namespace sdds {
         if (m_cartonSize % 6 == 0 && m_eggNum >= 0 && m_eggNum <= m_cartonSize && m_eggNum <= m_cartonSize)
         {
             m_eggNum += value;
-            if (m_eggNum > 6)
-            {
-                setBroken();
-            }
+                if (m_eggNum > 6)
+                {
+                    setBroken();
+                }
         }
         return *this;
     }
@@ -148,43 +148,45 @@ namespace sdds {
     EggCarton& EggCarton::operator+=(EggCarton& right) ////////////hold
     {
         int capacity = 6 - m_eggNum;
-        if (right.m_eggNum <= capacity) {
-            m_eggNum += right.m_eggNum;
-        }
-        else {
-            m_eggNum = 6;
-            right.m_eggNum -= capacity;
-        }
+            if (right.m_eggNum <= capacity) {
+                m_eggNum += right.m_eggNum;
+            }
+            else {
+                m_eggNum = 6;
+                right.m_eggNum -= capacity;
+            }
         return *this;
     }
 
     EggCarton& EggCarton::operator=(int value)
     {
         m_eggNum = value;
-        if (m_eggNum > 6 && m_eggNum % 6 != 0)
-        {
-            setBroken();
-        }
+            if (m_eggNum > 6 && m_eggNum % 6 != 0)
+            {
+                setBroken();
+            }
         return *this;
     }
 
     bool EggCarton::operator==(const EggCarton& right) const
     {
         double differ = 0.0;
-        differ = this->operator double() - right.operator double();
+            differ = this->operator double() - right.operator double();
         return (differ >= -0.001 && differ <= 0.001);
     }
 
     int operator+(int left, const EggCarton& right)
     {
-        if (right.operator bool())
-        {
-            return (left + right.operator int());
-        }
-        else
-        {
-            return left;
-        }
+        int eggNum;
+            if (right.operator bool())
+            {
+                eggNum = (left + right.operator int());
+            }
+            else
+            {
+                eggNum = left;
+            }
+        return eggNum;
     }
 
     ostream& operator<<(ostream& ostr, const EggCarton& right)
@@ -211,21 +213,21 @@ namespace sdds {
     EggCarton::operator double() const
     {
         double result;
-        if (!operator bool())
-        {
-            result = -1.0;
-        }
-        else
-        {
-            if (m_eggSize == true)
+            if (!operator bool())
             {
-                result = RegularEggWieght * m_eggNum / 1000.0;
+                result = -1.0;
             }
             else
             {
-                result = JumboEggWieght * m_eggNum / 1000.0;
+                if (m_eggSize == true)
+                {
+                    result = RegularEggWieght * m_eggNum / 1000.0;
+                }
+                else
+                {
+                    result = JumboEggWieght * m_eggNum / 1000.0;
+                }
             }
-        }
         return result;
     }
 }

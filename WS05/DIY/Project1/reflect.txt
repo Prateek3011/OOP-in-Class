@@ -1,0 +1,18 @@
+/***********************************************************************
+// OOP244 Workshop 5 Part2: Operators
+// File Reflect
+// Version 1.0
+// Date	2023/02.15
+// Author Sae-mi Park
+// Description
+// Tests the Bus module
+//
+// Revision History
+// -----------------------------------------------------------
+// Name            Date            Reason
+//
+/////////////////////////////////////////////////////////////////
+***********************************************************************/
+
+
+A. successfully completing of this workshop, I had demonstrated the abilities to overload binary member operators, create and define type conversion operators, create, and define helper operators (without using the friendship of a C++ class), reuse member operators. In order to solve this workshop, it was basically necessary to be able to properly use operators, istreme, and ostreme. In order to use operator, I had to clarify the calculation relationship between the value that I am central to and the value that I use. For example, a new value had to be added or subtracted in a situation that met the conditions, or the existing value had to be changed through assign. Therefore, this assignment seems to require an understanding of basic mathematics. Also, through proper use of istream and ostrema, cout and cin can be used like functions in the main.Furthermore, through the buffer and ignore in cin, I was able to learn scanf and other input methods. scanf can only accept one value at a time, but we learned that cin can accept multiple values on a single line through the separator line.
