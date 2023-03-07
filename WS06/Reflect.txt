@@ -1,0 +1,19 @@
+/***********************************************************************
+// OOP244 Workshop 6 Part1: Classes with Resource
+// File Reflect
+// Version 1.0
+// Date	Mar 07, 2023
+// Author Sae-mi Park
+// Description
+// Tests Numbers module
+//
+// Revision History
+// -----------------------------------------------------------
+// Name            Date            Reason
+//
+/////////////////////////////////////////////////////////////////
+***********************************************************************/
+
+A. 
+
+In this workshop, we had to face various difficulties to solve the lab part. First of all, I spent a lot of time trying to understand main well. It was not easy to recognize main immediately because there were various symbols together when it was identified as output. Next, we had to choose the necessary functions well. Basically, to properly implement each function of the functions given in the instruction, it was necessary to understand the relationship between all functions. In addition, it was necessary to be able to write code so that each function could perform its proper function. Next, we needed to be able to create and delete dynamic allocated memory when appropriate. It was the same last time, but this time too, it was because I suffered from a memory leak for a while. Finally, we had to use the appropriate operator and copy constructors. This allowed copying and creation of files to work well.
