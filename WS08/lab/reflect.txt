@@ -1,0 +1,17 @@
+**********************************************************************
+// OOP244 Workshop # p1: tester program
+//
+// File	Reflect
+// Version 1.0
+// Date	   Mar 20, 2023
+// Author	Sae-mi Park
+// Description
+//
+// Revision History
+// -----------------------------------------------------------
+// Name            Date            Reason
+// Fardad          2023-03-19      Revision, correction
+/////////////////////////////////////////////////////////////////
+***********************************************************************/
+
+A. For doing this 8th workshop, I shoud understand "Pure Virtual Function" and "inheritance" as well. As always, writing new code by combining unfamiliar new features is a slow process and involves a lot of trial and error. This workshop, too, was not easily resolved. In particular, pure virtual function was rather difficult because there were many empty places. When I was told to write a code in a state where nothing was developed after writing only full code, I was even anxious, like a person obsessed with the obsession to put something in. But I don't think that's the charm of pure virtual function. Apart from this, I had more difficulty than I thought in the load function inheritance. It seems that I went through quite a bit of trial and error in the process of receiving input from the Media class for the first time, then inheriting it from other classes and saving the input value. cin is always easy to use, but also always baffling. It's like the phenomenon of skipping the input of space. It looks easy, but it seems difficult and there are many, but it seems that there were few workshops.
