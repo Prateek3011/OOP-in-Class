@@ -1,0 +1,15 @@
+/***********************************************************************
+// OOP244 Workshop 9:
+// File	reflect.txt
+// Version 1.0
+// Data	Mar 30 2023
+// Author	Sae-mi Park
+// Description
+//
+// Revision History
+// -----------------------------------------------------------
+// Name            Data            Reason
+/////////////////////////////////////////////////////////////////
+***********************************************************************/
+
+When I first saw this Workshop 9, I thought it would be really easy and quick to solve. But I ended up investing more time than I thought. In order to solve this workshop, I needed to understand inheritance more accurately. I also had to carefully check and understand the previously given functions. In this process, I could feel the team work indirectly. If I were to work in the field, I would not write all the codes by myself, but I would definitely distribute the work with other team members, and later, when all the codes were finally combined, they would have to be well harmonized and converged. Therefore, I had to compose my code while accurately understanding the other codes given in advance, so that the finished result could come out. Therefore, I was able to experience team work indirectly. Also, the inherited module was able to practice using the functions of the upper module again. All of these things had to be done to produce perfect results. Also, I was able to practice a lot of Dynamic Allocate Memory. This time, especially since many member variables are made up of dynamics, we had to carefully code the code to avoid memory leaks.
