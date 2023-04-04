@@ -1,0 +1,14 @@
+// Final Project MS5 >> REFLECT
+// Point of Sale Application
+// Version 1.0
+// Date  2023-04-02
+// Author   Sae-mi Park
+// Description
+// This program test the student implementation of the Point of
+// Sale Application
+//
+/////////////////////////////////////////////////////////////////
+
+MS5-1.
+
+In the Utils.cpp, I add [bubble] function for sorting and I follow from [https://intro2c.sdds.ca/F-Refinements/algorithms#sorting]. Also for doing widtr, setf, and fill I got a reference from [https://ict.senecacollege.ca/~oop244/pages/content/cppst.html]

@@ -1,0 +1,4 @@
+﻿  PosApp.cpp
+C:\Users\Owner\OneDrive - Seneca\Desktop\Seneca\2nd\oop\MS\MS5\Utils.h(21,25): warning C4099: 'sdds::Item': type name first seen using 'class' now seen using 'struct'
+C:\Users\Owner\OneDrive - Seneca\Desktop\Seneca\2nd\oop\MS\MS5\Item.h(23): message : see declaration of 'sdds::Item'
+  Ms.vcxproj -> C:\Users\Owner\OneDrive - Seneca\Desktop\Seneca\2nd\oop\MS\MS5\x64\Debug\Ms.exe
