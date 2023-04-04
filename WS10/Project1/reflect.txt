@@ -1,0 +1,15 @@
+/***********************************************************************
+// OOP244 Workshop 10:
+// File	main.cpp
+// Version 1.0
+// Date	2023-04-04
+// Author	Sae-mi Park
+// Description
+//
+// Revision History
+// -----------------------------------------------------------
+// Name            Data            Reason
+/////////////////////////////////////////////////////////////////
+***********************************************************************/
+
+A. For making template was not that hard, because It was almost same as what we did during the class. But the last part made me to think more and make more details. Also, I should check all implemented code before doing the workshop. For checking the other codes, I can make details for right results. Template was looked very simple and easy, but when I try to do it without any note, I easily forget the things to do write. It may I am not used to this work before. For the workshop, I should check some details such as when should I make a count for true and false checking. If the conditions for input values were not accurately set, other values could easily be determined to be true or values that should be true could easily become false. It was a task that had to be balanced under precise conditions like a seesaw.
