@@ -1,0 +1,36 @@
+// Final Project MS5 >> REFLECT
+// Point of Sale Application
+// Version 1.0
+// Date  2023-04-02
+// Author   Sae-mi Park
+// Description
+// This program test the student implementation of the Point of
+// Sale Application
+//
+/////////////////////////////////////////////////////////////////
+
+MS5-1.
+
+In the Utils.cpp, I add [bubble] function for sorting and I follow from [https://intro2c.sdds.ca/F-Refinements/algorithms#sorting]. Also for doing widtr, setf, and fill I got a reference from [https://ict.senecacollege.ca/~oop244/pages/content/cppst.html]
+
+
+MS5-2.
+None citaion.
+
+MS5-3.
+
+In Utils.cpp, I add [pause] function for "Press Enter to start" part on selection/remove part. I follow from workshop6 - lab.
+
+MS5-4.
+
+None citation.
+
+MS5-5.
+
+None citation.
+
+
+******* Finishing the Milestone.
+>>I was able to study various things while completing the final assignment. I was able to re-study and learn the dynamical allocate memory, inheritance, copy constructor, copyu assignment, operators, etc. that I had learned in class so far. I felt that I still needed to study and get used to the parts that I always struggled with every assignment. I also learned that milestones are not the end, but the beginning. Through this milestone, I was able to handle the pos system. The actual pos system would be much more sophisticated and complex, but I think I was able to indirectly experience the system that runs a little bit. Also, through milestones, I was able to find out how much I was lacking in. Of course, it is true that many parts are lacking. Still, it felt pretty good to finish the milestone by myself.
+
+
